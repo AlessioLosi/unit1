@@ -1,0 +1,165 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: black;
+
+}
+
+body {
+    background-image: url('../img/sfondo.png');
+    background-position: center;
+}
+
+/* HEADER */
+header {
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px;
+    background-color: #0088aa;
+    box-shadow: 3px 4px 3px 4px;
+    color: #444;
+
+}
+
+.logo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav ul li a:link,
+nav ul li a:visited,
+.links ul li a:link,
+.links ul li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover,
+.links ul li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+ nav li a::before {
+    content: "\21D2";
+}
+nav li a::after {
+    content: "\21D0";
+}
+
+
+
+.menu {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* MAIN */
+main {
+    background-color: #ffffff;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    box-shadow: 3px 4px 3px 4px;
+    color: #444;
+
+}
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+input{
+ border-bottom:  2px black dashed; 
+ border-top: 0px;
+ border-left: 0px;
+ border-right: 0px;
+}
+button{
+     color:white;
+    background-color: #3367c9;
+    border: 0px;
+}
+
+.colore {
+    color: #aa2072;
+}
+
+.credit,
+span.material-symbols-outlined {
+    color: #a39fa4;
+}
+
+.kbd {
+    border: 1px;
+    border-style: solid;
+    border-color: #a9a7a8;
+    background-color: #e9e2e4;
+    border-radius: 20px;
+}
+
+iframe {
+    margin: 0 auto;
+    width: 50%;
+    align-content: center;
+    border-radius: 25px;
+}
+.link {
+    color: #10a4c1;
+    text-decoration: underline;
+}
+
+
+/* TABELLE */
+table{
+    border-bottom: 1px solid #4a79cf ;
+    vertical-align: middle;
+
+}
+thead th
+{
+    background-color: #4a79cf;
+    color: white;
+}
+tr:nth-child(even){background-color: #F1F1F1;}
+.caption{
+    text-align: center;
+}
+
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+h3 {
+    text-align: center;
+}
+
+.aside {
+    background-color: #e3e4e6;
+    padding: 20px 20px;
+    margin: 20px 20px;
+}
+.data{
+    text-align: right;
+}
+.tag{
+  text-align: center;  
+}
+
+/* FOOTER */
+.footer {
+    background: rgb(53, 53, 53);
+    background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+    margin: 10px 10px;
+    padding: 0% 20px;
+    box-shadow: 3px 4px 3px 4px;
+    color: #444;
+
+
+}
+.email {
+    color: #f304fe;
+}
