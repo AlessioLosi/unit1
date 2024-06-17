@@ -45,6 +45,7 @@ console.log (number1+number2);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let x=12;
+console.log(x)
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
@@ -55,10 +56,9 @@ let x=12;
 myName='Losi';
 console.log(myName)
 
-const name= 'Giacomo';
-/*name= 'Giovanni'; è considerata errore perchè non si può riassegnare il valore ad una costante*/
-console.log(name)
-
+const name3= 'Giacomo';
+console.log(name3)
+/*name3= 'Giovanni'; è considerata errore perchè non si può riassegnare il valore ad una costante*/
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
@@ -68,7 +68,7 @@ console.log(name)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let number3=4;
-console.log(number3 -= x)
+console.log(number3 - x)
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
