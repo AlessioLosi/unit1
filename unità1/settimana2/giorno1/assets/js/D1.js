@@ -81,7 +81,7 @@ let name1= 'john';
 let name2= 'John';
 let verify1= name1===name2;
 console.log('la risposta è'+ verify1) ;
-name1= name1.toLowerCase;
-name2= name2.toLowerCase
-let verify2=name1===name2.toLowerCase(); 
+name1= name1.toLowerCase();
+name2= name2.toLowerCase();
+let verify2=name1===name2; 
 console.log('la risposta è'+ verify2)
