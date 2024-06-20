@@ -63,20 +63,16 @@ console.log(boundary(101))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const myString = 'Epicode , il corso per diventare developer'
-const lista = myString.split(' ');
-console.log(lista)
-
-function epify(lista) {
-
-    if (lista.split [0] === 'Epicode') {
-        return (lista)
-    } else {
-        return ('Epicode ' + lista)
+let myString= 'Epicode, il corso per diventare developer'
+function epify (){ 
+    if (myString.indexOf ('Epicode') === 0) {
+        return myString;
+    }else {
+        return 'Epicode ' + myString
     }
-}
 
-console.log(epify)
+}
+console.log(epify(myString))
 
 
 
@@ -103,12 +99,14 @@ console.log(check3and7(3))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const myString2='epicode'
-const myString3= myString2.split('')
-function reverseString(){
-    return myString3.reverse
+function reverseString(myString2){
+    let contrario= myString2.split('')
+    contrario.reverse();
+    contrario= contrario.join('');
+    return myString2 = contrario
+
 }
-console.log(reverseString())
+console.log(reverseString('EPICODE'))
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
