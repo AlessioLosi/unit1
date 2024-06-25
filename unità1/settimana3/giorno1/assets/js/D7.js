@@ -20,6 +20,17 @@ console.log(myString3(myString, myString2))
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
+function numeriCasuali() {
+  const numCasuali = [];
+  for (let i = 0; i < 10; i++) {
+    numCasuali[i] = Math.floor(Math.random() * 101); 
+  }
+  return numCasuali;
+}
+
+console.log(numeriCasuali());
+
+
 
 
 /* ESERCIZIO 3 (filter)
@@ -59,21 +70,35 @@ console.log('la somma è ', sumNumber3)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-function serieNumeri2(serieNumeri, n){
-return (serieNumeri.map((items)=>items+n));
-}
-const serieNumeri=[1,2,3,4];
-const n=5;
-console.log(serieNumeri2());
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
-*/
+*/ 
+
+/*function LunghezzaParola(parole){
+  const lunghezza = parole.map (item=>{
+    return item.length;
+  })
+  return lunghezza
+} 
+const parole=['taylor', 'swift', 'reputation'];
+console.log(LunghezzaParola())*/
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+function numeriCasuali1() {
+  const numCasuali1 = [];
+  for (let i = 0; i<100; i++) {
+    numCasuali1.push(i) ;
+  }
+  const numeriDispari = numCasuali1.filter(item => item % 2 !== 0);
+console.log(numeriDispari);
+  }
+  
+numeriCasuali1()
+
 
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
@@ -195,9 +220,15 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
-function oldestMovie(movie) {
-
+function oldestMovie(){
+  movies.forEach (Year =>{
+    return Year<=Year
+  })
+  
 }
+
+oldestMovie();
+console.log('il film più piccolo è ' , oldestMovie);
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
@@ -226,3 +257,9 @@ console.log(movieFiltered);
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+const trovafilm= function(){
+  const trovaAnno=movies.find(item=>{(item.Year)==='2015'})
+  console.log(trovaAnno)
+}
+
+trovafilm();
