@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body div,
+footer {
+  padding: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.myHeading {
+  color: #ff00d6;
+}
+.green{
+  background-color: rgb(34, 219, 34);
+}
+img{
+  width: 150px;
+}
+table{
+  border-collapse: collapse;
+  width: 70%;
+  text-align: center;
+}
+th, td{
+border: 2px solid black;
+}
+
